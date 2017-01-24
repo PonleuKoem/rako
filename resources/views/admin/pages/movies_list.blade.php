@@ -165,19 +165,19 @@
                           {{csrf_field() }}
                           <div class="form-group">
                             <label name="title" class="control-label">Title:</label>
-                            <input type="text" class="form-control" name="title" placeholder="title" required="required" pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?" title="Enter a valid title"/><span style="color: red">{{ ($errors -> has('title')) ? $errors -> first('title') : ''}}</span>
+                            <input type="text" value="{{ old('title') }}" class="form-control" name="title" placeholder="title" required="required" pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?" value="{{old('title')}}" title="Enter a valid title"/><span style="color: red">{{ ($errors -> has('title')) ? $errors -> first('title') : ''}}</span>
                           </div>
                           <div class="form-group">
                             <label name="description" class="control-label">description:</label>
-                            <textarea type="text" class="form-control" name="description" placeholder="Description" required="required" pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?" title="Enter description"></textarea><span style="color: red">{{ ($errors -> has('description')) ? $errors -> first('description'): ''}}</span>
+                            <textarea type="text" class="form-control" name="description" placeholder="Description" required="required" pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?" value="{{old('description')}}" title="Enter description"></textarea><span style="color: red">{{ ($errors -> has('description')) ? $errors -> first('description'): ''}}</span>
                           </div>
                           <div class="form-group">
                             <label name="url" class="control-label">URL:</label>
-                            <input type="text" class="form-control" name="url" placeholder="URL" required="required" pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?" title="Enter URL"/><span style="color: red">{{ ($errors -> has('url')) ? $errors -> first('url'): ''}}</span>
+                            <input type="text" value="{{ old('url') }}" class="form-control" name="url" placeholder="URL" required="required" pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?" title="Enter URL"/><span style="color: red">{{ ($errors -> has('url')) ? $errors -> first('url'): ''}}</span>
                           </div>
                           <div class="form-group">
                             <label name="years" class="control-label">Years:</label>
-                            <input type="number" class="form-control" name="years" placeholder="Years" required="required" pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?" title="Enter years"/><span style="color: red">{{ ($errors -> has('years')) ? $errors -> first('years'): ''}}</span>
+                            <input type="number" value="{{ old('years') }}" class="form-control" name="years" placeholder="Years" required="required" pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?" title="Enter years"/><span style="color: red">{{ ($errors -> has('years')) ? $errors -> first('years'): ''}}</span>
                           </div>
                           <div class="form-group">
                             <label name="img" class="control-label">Category:</label>

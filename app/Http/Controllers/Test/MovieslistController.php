@@ -51,9 +51,9 @@ class MovieslistController extends Controller
     {
         $dataI = DB::table('tbl_product');
         $this->validate($request, [
-            'title' => 'required|min:2|max:120',
+            'title' => 'required|min:2',
             'description' => 'required',
-            'url' => 'required|max:120', /*'required|url|max:120', for invalid url*/
+            'url' => 'required|min:5', /*'required|url|max:120', for invalid url*/
             'years' => 'required|min:4|max:4',
             'img' => 'required',
             'categories' => 'required',           

@@ -22,6 +22,7 @@
 								<div class="container">
 									<!-- /latest-movies1 -->
 							    <div class="browse-inner-come-agile-w3">
+							    @if($movies ->count()>0)
 							    @foreach($movies as $row)
 							   <div class="col-md-2 w3l-movie-gride-agile">
 										 <a href="{{URL::to('/post/'.$row->id)}}" class="hvr-shutter-out-horizontal"><img src="{{asset('images/'.$row->img)}}" title="album-name" alt=" " />
@@ -55,6 +56,13 @@
 									</div>	
 									</div>
 									@endforeach
+									@else
+									<div class="">
+										<div class="w3_agile_banner_bottom_grid" style="text-align: center; padding: 10%">
+										 	<h1 style="text-align: center;">No movie is found</h1>
+										</div>
+									</div>
+									@endif
 								<div class="clearfix"> </div>
 									
 								</div>

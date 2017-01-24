@@ -92,7 +92,7 @@ font-family: 'Roboto Condensed', sans-serif;
     padding: 3em 0 0 3em;
 }
 .single-right{
-	background: #f7f7f7;
+	background: rgba(255, 141, 27, 0.09);
        padding: 2em 0 0 2em;
 }
 .show-right-grids {
@@ -489,7 +489,7 @@ width:100%;
 		    width: 100%;
 	}
 	.single-right {
-		background: #f7f7f7;
+		background: rgba(255, 141, 27, 0.09);
 		padding:2em 1em 0 2em;
 		float: none;
 		width: 45%;

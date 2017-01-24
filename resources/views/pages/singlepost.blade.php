@@ -20,7 +20,7 @@
 							<h3>THE LEGEND OF TARZAN - Official Trailer 2</h3>	
 					</div>
 						<div class="embed-responsive embed-responsive-16by9">
-						    <iframe class="embed-responsive-item" src="{{$movies->url}}"></iframe>
+						    {!!$movies->url!!}
 						 </div>
 					</div>
 					<div class="song-grid-right">
@@ -131,12 +131,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4 single-right">
+				<div class="col-md-4 col-xs-12 single-right">
 					<h3>Up Next</h3>
 					<div class="single-grid-right">
 					@foreach($sim as $row)
 						<div class="single-right-grids">
-							<div class="col-md-4 single-right-grid-left">
+							<div class="col-md-4 col-xs-6 single-right-grid-left">
 								<a href="{{URL::to('/post/'.$row->id)}}"><img src="{{asset('images/'.$row->img)}}" alt="" /></a>
 							</div>
 							<div class="col-md-8 single-right-grid-right">

@@ -80,9 +80,6 @@
         </ul>
         <div class="container">
             <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
-                <ul id="myTab" class="nav nav-tabs" role="tablist">                    
-                    <li role="presentation"><a href="#imdb" class="pull-right" role="tab" id="imdb-tab" data-toggle="tab" aria-controls="imdb" aria-expanded="false">View More</a></li>
-                </ul>
                 <div id="myTabContent" class="tab-content">
                     <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
                         <div class="w3_agile_featured_movies">
