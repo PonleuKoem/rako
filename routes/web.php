@@ -68,4 +68,7 @@ Route::group(['middleware' => ['admin']], function() {
 Route::get('/signintest', function () {
     return view('test.login');
 });
-Route::resource('nerds', 'Insert_newController');
+Route::resource('/genres', 'Admin\GenresController');
+Route::resource('/cms/resolutions', 'Admin\ResolutionsController');
+Route::resource('/cms/statuses', 'Admin\StatusesController');
+Route::resource('/cms/movies', 'Admin\MoviesController');

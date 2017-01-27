@@ -174,6 +174,9 @@
             <li><a href="{{URL::to('/movieslist')}}"><i class="fa fa-circle-o"></i>Movie List</a></li>
             <li><a href="{{URL::to('/cms/news')}}"><i class="fa fa-circle-o"></i>News</a></li>
             <li><a href="{{URL::to('/cms/trailers')}}"><i class="fa fa-circle-o"></i>Trailers</a></li>
+            <li><a href="{{URL::to('/genres')}}"><i class="fa fa-circle-o"></i>Genres</a></li>
+            <li><a href="{{URL::to('/cms/resolutions')}}"><i class="fa fa-circle-o"></i>Resolutions</a></li>
+            <li><a href="{{URL::to('/cms/statuses')}}"><i class="fa fa-circle-o"></i>Statuses</a></li>
           </ul>
         </li>
         <li><a href="{{URL::to('/slides')}}"><i class="fa fa-book"></i> <span>Slides</span></a></li>
@@ -248,5 +251,15 @@
 <script src="{{URL::to('AdminLTE/bootstrap/js/bootstrap.min.js')}}"></script>
 <script src="{{URL::to('AdminLTE/dist/js/app.min.js')}}"></script>
 <script src="{{URL::to('AdminLTE/dist/js/demo.js')}}"></script>
+<script>
+                                  var loadFile = function(event) {
+                                    var reader = new FileReader();
+                                    reader.onload = function(){
+                                      var output = document.getElementById('output');
+                                      output.src = reader.result;
+                                    };
+                                    reader.readAsDataURL(event.target.files[0]);
+                                  };
+                                </script>
 </body>
 </html>
